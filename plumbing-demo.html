@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Plumbix — Plumbing & Home Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Modern homepage mockup for plumbing services: services, trust, stats, reviews, CTA, footer.">
+<style>
+:root{
+  --bg:#0f1420;--panel:#161d2d;--muted:#a8b2c3;--text:#eaf0ff;--brand:#2aa6ff;--brand2:#1b87d6;
+  --line:#223049;--ok:#18ce6a;--accent:#ffb03a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,Segoe UI,Roboto,Arial}
+a{text-decoration:none;color:inherit;transition:.2s}
+img{max-width:100%;display:block;border-radius:10px}
+.container{width:min(1180px,92%);margin:0 auto}
+h1,h2,h3{font-weight:700;line-height:1.2}
+h2{margin-bottom:12px;font-size:2rem}
+.muted{color:var(--muted)}
+
+/* header */
+.header{position:sticky;top:0;background:rgba(15,20,32,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.brand{font-weight:800;font-size:1.2rem;display:flex;align-items:center;gap:8px}
+.logo{width:28px;height:28px;border-radius:8px;background:var(--brand);display:grid;place-items:center}
+.menu a{margin-left:20px;color:var(--muted)}
+.menu a:hover{color:var(--brand)}
+.btn{background:var(--brand);color:#03101f;padding:10px 18px;border-radius:10px;font-weight:700}
+.btn:hover{background:var(--brand2)}
+
+/* hero */
+.hero{padding:60px 0;display:grid;gap:30px;grid-template-columns:1fr 1fr;align-items:center}
+.hero h1{font-size:2.6rem}
+.hero .sub{margin:14px 0;color:var(--muted)}
+.hero img{height:360px;object-fit:cover}
+
+/* sections */
+.section{padding:60px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--panel);padding:20px;border-radius:14px;border:1px solid var(--line);transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:var(--brand)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:20px}
+.stat{background:var(--panel);padding:20px;text-align:center;border-radius:12px;border:1px solid var(--line)}
+.stat b{font-size:1.6rem;color:#fff}
+.testi{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.quote{background:var(--panel);padding:20px;border-radius:12px;border:1px solid var(--line)}
+.stars{color:#ffd86b}
+
+/* cta */
+.cta{margin:40px 0;padding:30px;border:1px dashed var(--brand);border-radius:16px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+
+/* faq */
+.faq details{background:var(--panel);padding:14px;border-radius:12px;border:1px solid var(--line);margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+
+/* footer */
+footer{margin-top:50px;padding:40px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:.9rem}
+footer .links{margin:14px 0;display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+footer a{color:var(--muted)}
+footer a:hover{color:var(--brand)}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="brand"><span class="logo">🛠</span>Plumbix</div>
+    <nav class="menu">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#projects">Projects</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Reliable Plumbing for Homes & Businesses</h1>
+      <p class="sub">A clean, modern, service-focused homepage concept to inspire trust and drive calls.</p>
+      <a href="#contact" class="btn">Request Service</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1621905252651-df0f0f5e9081?q=80&w=1200&auto=format&fit=crop" alt="Plumber">
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card"><h3>Emergency Repairs</h3><p class="muted">24/7 pipe & leak fixes, guaranteed response.</p></div>
+      <div class="card"><h3>Water Heaters</h3><p class="muted">Installation & replacement of tank/tankless systems.</p></div>
+      <div class="card"><h3>Drain & Sewer</h3><p class="muted">Hydro-jetting, inspections, line repair.</p></div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section id="why" class="section">
+    <h2>Why Choose Us?</h2>
+    <ul class="muted">
+      <li>✔ Licensed & insured, permits handled</li>
+      <li>✔ Upfront pricing, no surprises</li>
+      <li>✔ 4.9★ average rating with 500+ reviews</li>
+    </ul>
+  </section>
+
+  <!-- Projects / Stats -->
+  <section id="projects" class="section">
+    <h2>Our Stats</h2>
+    <div class="stats">
+      <div class="stat"><b>1200+</b><div class="muted">Repairs Completed</div></div>
+      <div class="stat"><b>45min</b><div class="muted">Avg Response</div></div>
+      <div class="stat"><b>98%</b><div class="muted">First-Time Fix</div></div>
+      <div class="stat"><b>25yrs</b><div class="muted">Experience</div></div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="section">
+    <h2>Google-Style Reviews</h2>
+    <div class="testi">
+      <div class="quote"><b>Alex P.</b> <span class="stars">★★★★★</span><p>“Arrived in 30 minutes, fixed fast, honest pricing.”</p></div>
+      <div class="quote"><b>Maria S.</b> <span class="stars">★★★★★</span><p>“Professional and polite. Highly recommend.”</p></div>
+      <div class="quote"><b>John L.</b> <span class="stars">★★★★☆</span><p>“Explained everything, left place spotless.”</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta">
+    <div>
+      <h3>Need Service Today?</h3>
+      <p class="muted">Call or email — we respond within minutes.</p>
+    </div>
+    <div>
+      <a href="tel:+18005551234" class="btn">📞 (800) 555-1234</a>
+      <a href="mailto:hello@plumbix.com" class="btn">✉ Email Us</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details><summary>Do you offer same-day service?</summary><p class="muted">Yes, dispatch within 1–2h in most areas.</p></details>
+      <details><summary>Are estimates free?</summary><p class="muted">Yes, all quotes are free & upfront.</p></details>
+      <details><summary>Do you warranty repairs?</summary><p class="muted">Every job is backed with a written guarantee.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="links">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#projects">Projects</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p>© 2025 Plumbix. Built as a mockup for concept demo.</p>
+</footer>
+</body>
+</html>
